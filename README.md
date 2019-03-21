@@ -1,9 +1,11 @@
 # DataMatrixForAndroid
-在Android上检测DM码，返回识别的内容
+在Android上检测DM码，返回识别的内容<br/><br/>
 
+```
 使用方法：
-参数1： Bitmap， 参数2： 超时时间；
-String result = decoder.getDMListFromBitmap(bitmap, 2000);
+        参数1： Bitmap
+        参数2： 超时时间
+        String result = decoder.getDMListFromBitmap(bitmap, 2000);
 
 示例：
         // Example of a call to a native method
@@ -21,6 +23,6 @@ String result = decoder.getDMListFromBitmap(bitmap, 2000);
         }.start();
 
 注意事项：
-   示例中使用了getResources() 来读取mipmap， 这种情况在不同的机型安卓会自动缩放图片， 导致识别失败； 建议通过InputStream的方式来加载Bitmap；
-   
+   示例中使用了getResources() 来读取mipmap， 这种情况在不同的机型安卓会自动缩放图片， 导致识别失败； 建议通过InputStream的方式来加载Bitmap
+   ```
    
